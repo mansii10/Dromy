@@ -1,0 +1,13 @@
+function arrayReverse (arr1) {
+  var len = arr1.length;
+  for (var i = 0; i < len / 2; i++) {
+    var fromEnd = len - i;
+    var fromBegin = i;
+    var temp = arr1[fromBegin];
+    arr1[fromBegin] = arr1[fromEnd];
+    arr1[fromEnd] = temp;
+  }
+  return arr1;
+}
+
+console.log(arrayReverse([6,9,4,3,8, 1]));
