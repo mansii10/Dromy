@@ -1,0 +1,18 @@
+function isPower2(num) {
+ var n = num;
+ var curr = 1; 
+ while (curr <= n) {
+   if (curr === n) 
+   {
+    return true; 
+   }
+   curr = curr * 2;
+ }
+ return false;
+}
+
+// test
+console.log(isPower2(7));
+console.log(isPower2(16));
+
+ 
