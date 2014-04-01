@@ -1,0 +1,26 @@
+//JS function to compare two array for equality
+
+var array = ["A", "B", "C", "D"];
+var second1 = ["A", "B", "C", "D"];
+var second2 =["A", "B", "C"];
+var second3 =["A", "B", "D", "C"];
+
+// Accepts 2 arrays and returns true if arrays are equal or
+// false if not equal.
+function areArraysEqual(arr1, arr2) {
+    if (arr1.length !== arr2.length) {
+        return false;
+    } else {
+        for(var i = 0; i < arr1.length; i++) { 
+            if (arr1[i] !== arr2[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+console.log(areArraysEqual(array, array));
+console.log(areArraysEqual(array, second1));
+console.log(areArraysEqual(array, second2));
+console.log(areArraysEqual(array, second3));
