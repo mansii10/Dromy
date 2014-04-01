@@ -1,0 +1,16 @@
+//given an array find all elements which are multiples of 5 
+
+function multipleOfFive(aar)
+{
+    var results = [];
+    for (var i=0; i< aar.length; i++)
+    {
+        var value = aar[i];
+        if (value % 5 == 0)
+        {
+            results.push(value);
+        }
+    }
+    return results;
+}
+console.log(multipleOfFive([1, 2,5, 3, 7, 2, 8, 4, 9, 10, 5]));
